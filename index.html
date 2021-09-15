@@ -5,39 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Project Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <section>
-        <nav>
-          <ul>
-            <li><a href="#">LOGOSITE</a></li>
+      <nav>
+        <div id="logo"><a href="#">LOGOSITE</a></div>
+        <div>
+          <ul class="menu">
             <li><a href="#">INFO</a></li>
             <li><a href="#">HOTEL ROOMS</a></li>
             <li><a href="#">REVIEWS</a></li>
             <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="lang">            
             <li><a href="#">NL</a></li>
             <li><a href="#">EN</a></li>
             <li><a href="#">FR</a></li>
             <li><a href="#">DE</a></li>
           </ul>
-        </nav>
-        <div class="slideshow-container">
-          <div class="mySlides">
-            <div class="numbertext">1/3</div>
-            <img src="/img/slide1.jpg" style="width: 100%" alt="Apartment Photo" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="Welcome">
+        <div class="text-part">
+          <h2>Welcome to hotel</h2>
+          <p>Welcome to the Recour Hotel, a romantic luxury hotel
+            with its own town garden, peacefully located at a mere
+            100 metres from Poperinge town market square, the
+            heart of hop country.</p>
+            <button>MORE INFO</button>
+        </div>
+        <div class="selection-part">
+          <div>
+            <h4>Arrival</h4>
+            <div>
+              <input type="date" name="arrival" id="arrival">
+            </div>
           </div>
-          <div class="mySlides">
-            <div class="numbertext">2/3</div>
-            <img src="/img/slide2.jpg" style="width: 100%" alt="Apartment Photo" />
+          <div>
+            <h4>Departure</h4>
+            <div>
+              <input type="date" name="departure" id="departure">
+            </div>
           </div>
-          <div class="mySlides">
-            <div class="numbertext">3/3</div>
-            <img src="/img/slide3.jpeg" style="width: 100%" alt="Apartment Photo" />
+          <div>
+            <h4>Number of guests</h4>
+            <div>
+              <select name="number-of-guests" id="guests">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="more-than-10">More that 10 guests</option>
+              </select>
+            </div>
           </div>
         </div>
       </section>
-    </header>
+      
+      
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
