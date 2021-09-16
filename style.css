@@ -75,7 +75,7 @@ h2 {
     margin-bottom: 35px;
     font-size: 2.57em;
 }
-p {
+.Welcome p {
     width: 400px;
     color: #514b62;
     margin-bottom: 30px;
@@ -89,7 +89,7 @@ button {
     background-color: #6b6161; 
     border: none;
     color: #f7f4f3;
-    padding: 13px 32px;
+    padding: 13px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -108,3 +108,113 @@ h4 {
 }
 
 /* Featured chambers section */
+.featured-chambers {
+    padding: 77px 100px 125px 100px;
+    background-color: #ede3da;
+}
+.all-chambers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.h2-and-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.chamber {
+    background-color: #d9d0ca;
+    width: 305px;
+}
+
+
+.chamber-image {
+    background-position: center;
+    background-size: cover;
+    height: 218px;
+    width: 305px;
+}
+.image-1{ background-image: url(img/slide1.jpg); }
+.image-2{ background-image: url(img/slide2.jpg); }
+.image-3{ background-image: url(img/slide1.jpg); }
+
+.description {
+    padding: 17px 17px 17px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 170px;
+}
+.chamber h3 {
+    margin-bottom: 20px;
+    font-size: 1.29em;
+}
+.chamber p {
+    font-size: 1em;
+    line-height: 1.22em;
+    margin-bottom: 12px;
+}
+.chamber a {
+    color: #514b62;
+    text-align: end;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-top: auto;
+}
+
+/* (Future) Slider section */
+
+.slider-field{
+    block-size: 1920px 850px;
+    background-image: url(img/slide2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-height: 850px; 
+    background-size: cover;
+    border-bottom: 4px solid #aca4a4;
+}
+
+/* Impressions and Reviews Section */
+
+.impressions-and-reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+/* Impressions */
+.impressions {
+    flex: 70%;
+    background-color: #f7f4f3;
+    padding: 80px 10px 90px 100px;
+}
+.all-impress-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.column {
+    display: flex;
+    flex-direction: row;    
+}
+.impress-img {
+    margin: 0px 20px 20px 0px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 289px; 
+    width: 315px;
+    background-size: cover;
+}
+
+.im-1 {background-image: url(img/im-1.jpeg);}
+.im-2 {background-image: url(img/im-2.jpg);}
+.im-3 {background-image: url(img/im-3.jpg);}
+.im-4 {background-image: url(img/im-4.png);}
+
+/* Reviews */
+.reviews {
+    flex: 30%;
+    background-color: #ede3da;
+    padding: 80px 100px 90px 36px;
+}
