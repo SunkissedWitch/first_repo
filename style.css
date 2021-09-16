@@ -72,7 +72,7 @@ main {
     background-color: #f7f4f3;
 }
 h2 {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     font-size: 2.57em;
 }
 .Welcome p {
@@ -199,7 +199,7 @@ h4 {
     flex-direction: row;    
 }
 .impress-img {
-    margin: 0px 20px 20px 0px;
+    margin: 20px 20px 0px 0px;
     background-position: top center;
     background-repeat: no-repeat;
     height: 289px; 
@@ -217,4 +217,33 @@ h4 {
     flex: 30%;
     background-color: #ede3da;
     padding: 80px 100px 90px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.rating {
+    margin-top: 20px;
+}
+.review h5 {
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.29em;
+    color: #514b62;
+    margin-bottom: 10px;
+}
+.review p {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.29em;
+    color: #514b62;
+    margin-bottom: 20px;
+}
+.border{
+    border-bottom: 1px solid #aca4a4;
+
+}
+
+.review-button {
+    justify-self: flex-end;
+    margin-top: auto;
 }
