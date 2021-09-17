@@ -247,3 +247,18 @@ h4 {
     justify-self: flex-end;
     margin-top: auto;
 }
+
+
+footer {
+    height: 95px;
+    background-color: #ede3da;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
+    color: #514b62;
+    font-size: 1em;
+}
