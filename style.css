@@ -64,6 +64,20 @@ main {
     justify-content: center;
 }
 
+@media screen 
+        and (max-device-width: 1200px) {
+        
+        .Welcome {
+            flex-direction: column;
+            padding: 50px 40px;
+        }
+
+        .Welcome > .text-part {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+
 .text-part{flex: 50%;}
 
 .selection-part {flex: 50%;}
@@ -110,12 +124,11 @@ button {
     font-size: 1.15em;
     text-align: center;
     margin-bottom: 15px;
-    height: 30%;
 }
 .selection-part input,
 .selection-part select{
     width: 98%;
-    height: 100%;
+    height: 200px;
     background-color: #aca4a4;
     color: #f7f4f3;
     border: none;
@@ -137,6 +150,9 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+.mobile-btn {
+    display: none;
 }
 
 .chamber {
@@ -208,7 +224,7 @@ button {
     flex-direction: column;
     flex: 70%;
     background-color: #f7f4f3;
-    padding: 80px 8% 90px 8%;
+    padding: 80px 2% 90px 8%;
 }
 .gallery {
     max-width: 600px;
@@ -221,9 +237,8 @@ button {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 130px;
-    height: 90%;
-    width: 45%;
+    height: 260px;
+    width: 260px;
 }
 
 .im-1 {background-image: url(img/im-1.jpeg);}
@@ -232,6 +247,12 @@ button {
 .im-4 {background-image: url(img/im-4.png);}
 
 /* Reviews */
+
+.user-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 .reviews {
     flex: 30%;
@@ -260,6 +281,7 @@ button {
 }
 .border{
     border-bottom: 1px solid #aca4a4;
+    margin-bottom: 10px;
 
 }
 
@@ -271,7 +293,7 @@ button {
 
 
 footer {
-    height: 95px;
+    padding: 30px;
     background-color: #ede3da;
     display: flex;
     flex-direction: column;
